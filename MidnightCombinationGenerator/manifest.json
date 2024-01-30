@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MidnightCombinationGenerator",
+  "version": "1.0.0",
+  "description": "Сombination generator for midnight.im license keys.",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://midnight.im/payments/activate-key"],
+      "js": ["content.js"]
+    }
+  ]
+}
